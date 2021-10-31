@@ -4,6 +4,9 @@ body{
 .logo{
     height: 60px;
 }
+.nav_text {
+    font-size: 16px;
+}
 .sine_up{
   background: #21B573;
   color:#FFFFFF;
@@ -74,8 +77,112 @@ body{
     margin-bottom: 40px;
 }
 .course{
-    color:#413960
+    color:#413960;
+    position:relative;
+    display:inline-block;
+    margin-bottom: 40px;
+    cursor:auto;
+}
+.course::after{
+    content:"";
+    background-image: linear-gradient(to right, rgb(116, 116, 223) 0%, rgb(65, 65, 225) 100%);
+    position:absolute;
+    height:8px;
+    width:50%;
+    left:0;
+    right:0;
+    bottom:-4px;
+    margin:auto;
+    border-radius: 25px;
+}
+.course:hover:after{
+    width:90%;
+    transition: 0.5s;
 }
 .box_text{
     color: #413960;
+}
+.course_colomn{
+    border:none;
+    border-radius: 10px;
+    padding-top:20px;
+    padding-left:20px;
+    padding-right: 20px;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 15px rgb(232, 219, 219);
+
+}
+.buy_button{
+    border:none;
+    background: #21B573;
+    color:#FFFFFF;
+    border-radius: 33px;
+    padding: 8px 35px 8px 35px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 17px; 
+}
+.box_icon{
+    width:18px;
+    height: 22px;
+    position:relative;
+}
+.incon_text{
+    color:#585859;
+    font-size: 16px;
+}
+
+.something{
+    margin-bottom: 5px;
+
+}
+.box-button{
+    margin-bottom: 10px;
+}
+.inbox{
+    padding-top:40px;
+    padding-bottom: 40px;
+}
+.Testimonial{
+    margin-top: 70px; 
+    margin-bottom: 60px;
+
+}
+.testimonal_img{
+    width:120px;
+    height:120px;
+}
+.testimonal_text{
+    font-size: 16px;
+
+    height: 90px;
+    width:auto;
+    margin-left: 53px;
+}
+.fourth_section{
+    margin-bottom: 115px;
+}
+.footer_link{
+    font-size: 15px;
+    color:white;
+    padding-right: 35px;
+}
+.last_footerlink{
+    font-size: 15px;
+    color:white;
+}
+.footer_header{
+    font-size: 25px;
+    font-weight: 500;
+}
+.fifth_section{
+    background:#282531;
+    padding-top:56px;
+}
+.footer_x{
+    padding-bottom: 76px;
+}
+.copyright{
+    color:white;
+    font-size: 15px;
 }
